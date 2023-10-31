@@ -2,6 +2,7 @@
 Baza podataka sadrži detalje o klubovima iz HT Premijer lige. Sadrži ime kluba, godina osnutka, grad, ime dvorane, kapacitet dvorane, trener, lista igraca, boje kluba, ime navijacke grupe ako ju klub ima.
 
 #### Opis baze podataka
+|||
 | -----------| ----------------------|
 | Naslov | HT Premijer liga
 | Tema | Klubovi u prvoj hrvatskoj košarkaškoj ligi
