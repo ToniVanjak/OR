@@ -11,6 +11,6 @@ Baza podataka sadrži detalje o klubovima iz HT Premijer lige. Sadrži ime kluba
 | Datum objave  | 31.10.2023.
 | Razdoblje koje skup podataka pokriva | 2023/24
 | Jezik  | hrvatski
-| Licencija  | CC BY-SA 3.0 HR
+| Licencija  | [CC BY-SA 3.0 HR](https://creativecommons.org/licenses/by-sa/3.0/hr/legalcode.hr)
 | Trenutna verzija  | 1.0
 | Atributi  | ime kluba, godina osnutka, grad, ime dvorane, kapacitet dvorane, trener, lista igraca, boje kluba, ime navijacke grupe
