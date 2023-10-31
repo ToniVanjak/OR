@@ -1,4 +1,4 @@
-| . | ...|
+| | |
 | -----------| ----------------------|
 | naslov                               | HT Premijer liga
 | tema                                 | klubovi u prvov hrvatskoj košarkaškoj ligi
