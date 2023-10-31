@@ -1,12 +1,15 @@
-| | |
+
+
+
+
 | -----------| ----------------------|
-| naslov                               | HT Premijer liga
-| tema                                 | klubovi u prvov hrvatskoj košarkaškoj ligi
-| ključne riječi                       | košarka, Hrvatska, klubovi
-| autor                                | Toni Vanjak
-| datum objave                         | 31.10.2023.
-| razdoblje koje skup podataka pokriva | 2023/24
-| jezik                                | hrvatski
-| licencija                            |
-| trenutna verzija                     | 1.0
-| atributi                             | ime kluba, godina osnutka, grad, ime dvorane, kapacitet dvorane, trener, lista igraca, boje kluba, ime navijacke grupe
+| Naslov                               | HT Premijer liga
+| Tema                                 | klubovi u prvov hrvatskoj košarkaškoj ligi
+| Ključne riječi                       | košarka, Hrvatska, klubovi
+| Autor                                | Toni Vanjak
+| Datum objave                         | 31.10.2023.
+| Razdoblje koje skup podataka pokriva | 2023/24
+| Jezik                                | hrvatski
+| Licencija                            |
+| Trenutna verzija                     | 1.0
+| Atributi                             | ime kluba, godina osnutka, grad, ime dvorane, kapacitet dvorane, trener, lista igraca, boje kluba, ime navijacke grupe
