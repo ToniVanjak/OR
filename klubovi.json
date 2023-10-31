@@ -1,0 +1,369 @@
+[{
+  "_id": {
+    "$oid": "65411dac1f61ed20ed7c77e0"
+  },
+  "ime": "Košarkaški klub Zadar",
+  "osnovan": 1945,
+  "grad": "Zadar",
+  "dvorana": "Dvorana Krešimira Ćosića",
+  "kapacitet": 9000,
+  "trener": "Danijel Jusup",
+  "kapetan": "Marko Ramljak",
+  "igraci": [
+    "Marko Ramljak",
+    "Luka Božić",
+    "Karlo Žganec",
+    "Dario Drežnjak",
+    "Arijan Lakić",
+    "Adem Mekić",
+    "Lovro Mazalin",
+    "Patrik Jambrović",
+    "Petar Vujačić",
+    "Krševan Klarica",
+    "Vice Grbić",
+    "Ivan Njegovan"
+  ],
+  "boje": [
+    "bijela",
+    "plava"
+  ],
+  "navijaci": "Tornado Zadar"
+},
+{
+  "_id": {
+    "$oid": "65411fd61f61ed20ed7c77e2"
+  },
+  "ime": "Košarkaški klub Split",
+  "osnovan": 1945,
+  "grad": "Split",
+  "dvorana": "Arena Gripe",
+  "kapacitet": 3500,
+  "trener": "Slaven Rimac",
+  "kapetan": "Tonko Vuko",
+  "igraci": [
+    "Tonko Vuko",
+    "Mate Kalajžić",
+    "Toni Perković",
+    "Edward Shelton",
+    "Krešimir Ljubičić",
+    "Boris Tišma",
+    "Lovre Runjić",
+    "James Funderburk",
+    "Lovro Gnjidić",
+    "Ante Perkušić",
+    "David Pavin",
+    "Antonio Klepo"
+  ],
+  "boje": [
+    "žuta",
+    "crna"
+  ],
+  "navijaci": null
+},
+{
+  "_id": {
+    "$oid": "654121161f61ed20ed7c77e4"
+  },
+  "ime": "Košarkaški klub Cibona",
+  "osnovan": 1946,
+  "grad": "Zagreb",
+  "dvorana": "Košarkaški centar Dražen Petrović",
+  "kapacitet": 5400,
+  "trener": "Jakša Vulić",
+  "kapetan": "Krešimir Radovčić",
+  "igraci": [
+    "Krešimir Radovčić",
+    "Ivan Perasović",
+    "Ivan Majcunić",
+    "Aleksandar Aranitović",
+    "Domagoj Vuković",
+    "Josip Pavković",
+    "Juraj Golemac",
+    "Filip Ferderber",
+    "Josip Krizmanić",
+    "Niko Bandov",
+    "Jere Jakić"
+  ],
+  "boje": [
+    "plava",
+    "bijela"
+  ],
+  "navijaci": null
+},
+{
+  "_id": {
+    "$oid": "654122da1f61ed20ed7c77e6"
+  },
+  "ime": "Košarkaški klub Cedevita Junior",
+  "osnovan": 1991,
+  "grad": "Zagreb",
+  "dvorana": "Dom sportova",
+  "kapacitet": 3100,
+  "trener": "Damir Mulaomerović",
+  "kapetan": "Josip Batinić",
+  "igraci": [
+    "Josip Batinić",
+    "Kevaughn Allen",
+    "Vito Kučić",
+    "Sandro Rašić",
+    "Jan Kosi",
+    "Ivan Karačić",
+    "Renato Serdarušić",
+    "Toni Bilić",
+    "Marko Ljubičić",
+    "Luka Mršić",
+    "Martin Jelić",
+    "Petar Ogrizović"
+  ],
+  "boje": [
+    "narančasta",
+    "crna"
+  ],
+  "navijaci": null
+},
+{
+  "_id": {
+    "$oid": "6541236f1f61ed20ed7c77e8"
+  },
+  "ime": "Košarkaški klub Dinamo Zagreb",
+  "osnovan": 1972,
+  "grad": "Zagreb",
+  "dvorana": "Košarkaški centar Dražen Petrović",
+  "kapacitet": 5400,
+  "trener": "Josip Sesar",
+  "kapetan": "Hrvoje Garafolić",
+  "igraci": [
+    "Hrvoje Garafolić",
+    "Ivan Vučić",
+    "Karlo Mikšić",
+    "Ivan Novačić",
+    "Ivan Vrgoč",
+    "Ivan Nakić-Vojnović",
+    "Mislav Brzoja",
+    "Filip Kraljević",
+    "Ivan Tvrtko Majić",
+    "Stipe Dugandžić",
+    "Toma Rukavina",
+    "Roko Lukić"
+  ],
+  "boje": [
+    "plava",
+    "bijela"
+  ],
+  "navijaci": "Bad Blue Boys"
+},
+{
+  "_id": {
+    "$oid": "654125481f61ed20ed7c77ea"
+  },
+  "ime": "Košarkaši klub Bosco Zagreb",
+  "osnovan": 1992,
+  "grad": "Zagreb",
+  "dvorana": "Školska sportska dvorana Boško Božić Pepsi",
+  "kapacitet": 1500,
+  "trener": "Ante Samac",
+  "kapetan": "Marat Kos",
+  "igraci": [
+    "Marat Kos",
+    "Borna Katanović",
+    "Dino Butorac",
+    "Toni Jelenković",
+    "Nikola Ivanković",
+    "Tin Tikveša",
+    "Matej Akrap",
+    "Bruno Bubalo",
+    "Ante Krapić",
+    "Luka Petranović",
+    "Tomislav Raos",
+    "Ante Ćosić"
+  ],
+  "boje": [
+    "žuta",
+    "plava"
+  ],
+  "navijaci": null
+},
+{
+  "_id": {
+    "$oid": "654125c81f61ed20ed7c77ec"
+  },
+  "ime": "Košarkaški klub Dubrovnik",
+  "osnovan": 1946,
+  "grad": "Dubrovnik",
+  "dvorana": "Športska dvorana Gospino polje",
+  "kapacitet": 1400,
+  "trener": "Željko Vreća",
+  "kapetan": "Ivan Vodopija",
+  "igraci": [
+    "Ivan Vodopija",
+    "Filip Vujičić",
+    "Petar Dubelj",
+    "Javon Markese Levi",
+    "Tomislav Cvitković",
+    "Vladan Lazić",
+    "Gvido Guštin",
+    "Dragan Džajić",
+    "Josip Popić",
+    "Lovre Klarić",
+    "Petar Miović",
+    "Jakov Vujičić"
+  ],
+  "boje": [
+    "bijela",
+    "crvena"
+  ],
+  "navijaci": null
+},
+{
+  "_id": {
+    "$oid": "654126d01f61ed20ed7c77ee"
+  },
+  "ime": "Košarkaški klub Alkar Sinj",
+  "osnovan": 1955,
+  "grad": "Sinj",
+  "dvorana": "Gradska sportska dvorana Ivica Glavan Ićo",
+  "kapacitet": 600,
+  "trener": "Tihomir Mustapić",
+  "kapetan": "Hrvoje Vučić",
+  "igraci": [
+    "Hrvoje Vučić",
+    "Michael Green",
+    "Mirko Jukić",
+    "Ralph Bissainthe",
+    "Kuol Alok",
+    "Ivan Pavela",
+    "Ivan Nazor",
+    "Maksim Matulina",
+    "Jure Boban",
+    "Ante Čović"
+  ],
+  "boje": [
+    "bijela",
+    "plava"
+  ],
+  "navijaci": "Sinjski Maligani"
+},
+{
+  "_id": {
+    "$oid": "654127db1f61ed20ed7c77f0"
+  },
+  "ime": "Košarkaški klub DepoLink Škrljevo",
+  "osnovan": 1973,
+  "grad": "Bakar",
+  "dvorana": "Dvorana Mavrinci",
+  "kapacitet": 720,
+  "trener": "Damir Rajković",
+  "kapetan": "Mario Rajčić",
+  "igraci": [
+    "Mario Rajčić",
+    "Karlo Uljarević",
+    "Viktor Šarić",
+    "Marcus Taylor",
+    "Noa Svoboda",
+    "Ivan Gulin",
+    "Vigo Bart",
+    "Leon Šljivarić",
+    "Darius Bell",
+    "Nikola Stanojević",
+    "Luka Ćošić",
+    "Filip Miljković"
+  ],
+  "boje": [
+    "zelena",
+    "crna"
+  ],
+  "navijaci": null
+},
+{
+  "_id": {
+    "$oid": "654128971f61ed20ed7c77f2"
+  },
+  "ime": "Košarkaški klub Dubrava",
+  "osnovan": 1976,
+  "grad": "Zagreb",
+  "dvorana": "Športska dvorana Dubrava",
+  "kapacitet": 1800,
+  "trener": "Jeronimo Šarin",
+  "kapetan": "Mateo Vidović",
+  "igraci": [
+    "Mateo Vidović",
+    "Toni Ročak",
+    "Mihael Kos",
+    "Andrej Matić",
+    "Issaih Arnold",
+    "Ivan Jurić",
+    "Kenan Karahodžić",
+    "Filip Paponja",
+    "Jean-Francois Rajaofera",
+    "Dario Kuzmanović",
+    "Niko Rimac",
+    "Filip Kalajžić"
+  ],
+  "boje": [
+    "žuta",
+    "crna"
+  ],
+  "navijaci": null
+},
+{
+  "_id": {
+    "$oid": "654129a21f61ed20ed7c77f4"
+  },
+  "ime": "Košarkaški klub Zabok",
+  "osnovan": 1977,
+  "grad": "Zabok",
+  "dvorana": "Sportska dvorana Zabok",
+  "kapacitet": 1800,
+  "trener": "Ivan Tomas",
+  "kapetan": "Antonio Črnjević",
+  "igraci": [
+    "Antonio Črnjević",
+    "Antonio Sikirić",
+    "Emil Savić",
+    "Dino Cinac",
+    "Luka Cvitanović",
+    "Arnet Owens",
+    "Bruno Rebić",
+    "Mihael Tomić",
+    "Andro Antonić",
+    "Vigor Borovčak",
+    "Ante Šustić",
+    "Duje Damjanić"
+  ],
+  "boje": [
+    "žuta",
+    "bijela"
+  ],
+  "navijaci": null
+},
+{
+  "_id": {
+    "$oid": "65412a821f61ed20ed7c77f6"
+  },
+  "ime": "Građanski košarkaški klub Šibenka",
+  "osnovan": 2010,
+  "grad": "Šibenik",
+  "dvorana": "Sportka dvorana Baldekin",
+  "kapacitet": 1726,
+  "trener": "Damir Milačić",
+  "kapetan": "Antonio Klarin",
+  "igraci": [
+    "Antonio Klarin",
+    "Luka Babić",
+    "Matej Perković",
+    "Lovro Mandalinić",
+    "Luka Skorić",
+    "Armin Hrštić",
+    "Andre Brown",
+    "Myles Howard",
+    "Lukas Ivan Bobek",
+    "Antonyo Makale Foreman",
+    "Dominik Škugor",
+    "Đorđe Topolović"
+  ],
+  "boje": [
+    "narančasta",
+    "crna"
+  ],
+  "navijaci": "Funcuti"
+}]
