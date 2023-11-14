@@ -1,0 +1,70 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "HT Premijer liga",
+    "description": "Skup svih igrača i klubova iz prve hrvatske košarkaške lige",
+    "required": [
+        "ime",
+        "osnovan",
+        "grad",
+        "dvorana",
+        "kapacitet",
+        "trener",
+        "kapetan",
+        "igraci",
+        "navijaci"
+    ],
+    "properties": {
+        "ime": {
+            "type": "string",
+            "title": "ime",
+            "description": "Ime kluba."
+        },
+        "osnovan": {
+            "type": "integer",
+            "title": "Godina osnutka",
+            "description": "Godina osnutka kluba."
+        },
+        "grad": {
+            "type": "string",
+            "title": "Ime grada",
+            "description": "Ime grada iz kojeg je klub."
+        },
+        "dvorana": {
+            "type": "string",
+            "title": "Ime dvorane",
+            "description": "Ime dvorane u kojoj klub igra."   
+        },
+        "kapacitet": {
+            "type": "integer",
+            "title": "Kapacitet dvorane",
+            "description": "Kapacitet dvorane."
+        },
+        "trener": {
+            "type": "string",
+            "title": "Ime i prezime trenera",
+            "description": "Ime i prezime trenera kluba."
+        },
+        "kapetan": {
+            "type": "string",
+            "title": "Ime i prezime kapetana",
+            "description": "Ime i prezime kapetana momčadi."
+        },
+        "igraci": {
+            "type": "array",
+            "title": "Lista igrača",
+            "description": "Lista igrača.",
+            "items": {
+                "type": "string",
+                "title": "Ime i prezime igrača",
+                "description": "Ime i prezime igrača."        
+            }
+        },
+        "navijaci": {
+            "type": "string",
+            "title": "Ime navijačke grupe",
+            "description": "Ime navijačke grupe."
+        }
+    }
+}
