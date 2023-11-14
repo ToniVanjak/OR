@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baza </title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <div>
+        <form>
+            <input type="text" id="searchInput" name="searchInput" placeholder="Upiši...">
+        </form>
+
+        <hr />
+
+        <select id="category" name="category">
+            <option value="Sva polja">Sva polja</option>
+            <option value="Ime Igraca">Ime igraca</option>
+            <option value="Ime Kluba">Ime kluba</option>
+            <option value="Osnovan">Osnovan</option>
+            <option value="Grad">Grad</option>
+            <option value="Dvorana">Dvorana</option>
+            <option value="Kapacitet">Kapacitet</option>
+            <option value="Trener">Trener</option>
+            <option value="Kapetan">Kapetan</option>
+            <option value="Navijaci">Navijaci</option>
+
+        </select>
+
+
+
+        <button type="button" id="csv">CSV</button>
+
+        <button type="button" id="json">JSON</button>
+
+    </div>
+    
+
+    <hr />
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Ime Igraca</th>
+                <th>Ime Kluba</th>
+                <th>Osnovan</th>
+                <th>Grad</th>
+                <th>Dvorana</th>
+                <th>Kapacitet</th>
+                <th>Trener</th>
+                <th>Kapetan</th>
+                <th>Navijaci</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="js/site.js">
+        
+    </script>
+
+</body>
+</html>

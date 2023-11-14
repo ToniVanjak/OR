@@ -1,0 +1,101 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.container {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.c {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.ci {
+    text-align: center;
+}
+
+    .ci img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+
+.linkcont {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+
+.link1 {
+    position: absolute;
+    bottom: 125px;
+    right: 150px;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.link2 {
+    position: absolute;
+    bottom: 125px;
+    right: 90px;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.link:hover {
+    background-color: #f0f0f0;
+}
+

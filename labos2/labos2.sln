@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "labos2", "labos2\labos2.csproj", "{DA1FD58B-5780-491D-916A-F9F57EBFA087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA1FD58B-5780-491D-916A-F9F57EBFA087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1FD58B-5780-491D-916A-F9F57EBFA087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1FD58B-5780-491D-916A-F9F57EBFA087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1FD58B-5780-491D-916A-F9F57EBFA087}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0156E537-E357-4C2D-9DE0-164D370D5F13}
+	EndGlobalSection
+EndGlobal
