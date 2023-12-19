@@ -1,0 +1,278 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "info": "Moja usluga",
+        "version": "3.0"
+    },
+    "paths": {
+        "/":{
+            "get": {
+                "summary": "Get whole collection",
+                "description": "Retrieves all players from database",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fetched Igraci"
+                    }
+                }   
+            },
+            "patch": {
+                "summary": "Not Implemented",
+                "description": "Indicates that the method PATCH is not implemented for this resource.",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Method not implemented for requested resource."
+                    }
+                }   
+            },
+            "head": {
+                "summary": "Not Implemented",
+                "description": "Indicates that the method HEAD is not implemented for this resource.",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Method not implemented for requested resource."
+                    }
+                }   
+            },
+            "options": {
+                "summary": "Not Implemented",
+                "description": "Indicates that the method OPTIONS is not implemented for this resource.",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "501": {
+                        "description": "Method not implemented for requested resource."
+                    }
+                }   
+            }
+        },
+        "{imeIgraca}": {
+            "get": {
+                "summary": "Get resource from collection by ID",
+                "description": "Returns a single collection resource",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "imeIgraca",
+                        "in": "path",
+                        "description": "ID of the resource",
+                        "required": true,
+                        "type": "string"
+
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fetched Igrac"
+                },
+                    "400": {
+                        "description": "Invalid type of Igrac"
+                },
+                    "404": {
+                        "description": "Igrac with the provided ImeIgraca doesn't exist HT Premijer Liga"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete a player",
+                "description": "Deletes a player from the system by name.",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "imeIgraca",
+                        "in": "path",
+                        "description": "Name of the player to delete",
+                        "required": true,
+                        "type": "string"
+
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Igrac deleted"
+                },
+                    "400": {
+                        "description": "Invalid type of Igrac"
+                },
+                    "404": {
+                        "description": "Igrac with the provided ImeIgraca doesn't exist in the HT Premijer Liga"
+                    }
+                }
+            } 
+        },
+        "/imeKluba/{imeKluba}":{
+            "get": {
+                "summary": "Get resource from collection by imeKluba",
+                "description": "Retrieves players belonging to a specific club by name.",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "imeKluba",
+                        "in": "path",
+                        "description": "Name of the club",
+                        "required": true,
+                        "type": "string"
+
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fetched Igraci"
+                },
+                    "400": {
+                        "description": "Invalid type of ImeKluba"
+                },
+                    "404": {
+                        "description": "Klub with the provided ImeKluba doesn't exist HT Premijer Liga"
+                    }
+                }
+            }
+        },
+        "imeGrada/{imeGrada}":{
+            "get": {
+                "summary": "Get resource from collection by imeGrada",
+                "description": "Retrieves players residing in a specific city by name.",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "imeKluba",
+                        "in": "path",
+                        "description": "Name of the city",
+                        "required": true,
+                        "type": "string"
+
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fetched Igraci"
+                },
+                    "400": {
+                        "description": "Invalid type of ImeGrada"
+                },
+                    "404": {
+                        "description": "Grad with the provided ImeGrada doesn't exist in HT Premijer Liga"
+                    }
+                }
+            }
+        },
+        "/osnovan/{osnovan}":{
+            "get": {
+                "summary": "Get players by year of club foundation",
+                "description": "Retrieves players from clubs founded in a specific year.",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "osnovan",
+                        "in": "path",
+                        "description": "Year of club foundation",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fetched Igraci"
+                },
+                    "400": {
+                        "description": "Invalid type of GodinaOsnutka"
+                },
+                    "404": {
+                        "description": "Igraci with the provided GodinaOsnutka doesn't exist HT Premijer Liga"
+                    }
+                }
+            } 
+        },
+        "/{imeKluba}/addIgrac":{
+            "post": {
+                "summary": "Add player to a club",
+                "description": "Adds a player to a specific club by name.",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "imeKluba",
+                        "in": "path",
+                        "description": "Name of the club",
+                        "required": true,
+                        "type": "string"
+
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": "application/json",
+                    "type": "string"
+                },
+                "responses": {
+                    "201": {
+                        "description": "Successfully created and added to the database"
+                },
+                    "400": {
+                        "description": "Invalid type of ImeKluba"
+                },
+                    "404": {
+                        "description": "Klub with the provided ImeKluba doesn't exist HT Premijer Liga"
+                    }
+                }
+            } 
+        },
+        "/{imeKluba}/{type}/edit":{
+            "put": {
+                "summary": "Edit a field in a club",
+                "description": "Updates a specific field in a club by name.",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name":"type",
+                        "in": "path",
+                        "description": "Name of the field to update",
+                        "required": true,
+                        "type": "string"
+
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": "application/json",
+                    "type": "string"
+                },
+                "responses": {
+                    "200": {
+                        "description": "{type} updated successfully"
+                },
+                    "400": {
+                        "description": "Klubovi do not contain given attribute."
+                },
+                    "404": {
+                        "description": "Klub with the provided ImeKluba doesn't exist in the HT Premijer Liga"
+                    }
+                }
+            } 
+        }
+    }
+}
