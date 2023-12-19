@@ -13,7 +13,7 @@ namespace labos2.Models
         public int kapacitet { get; set; }
         public string trener { get; set; }
         public string kapetan { get; set; }
-        public string[] igraci { get; set; }
+        public List<string> igraci { get; set; }
         public string navijaci { get; set; }
 
 

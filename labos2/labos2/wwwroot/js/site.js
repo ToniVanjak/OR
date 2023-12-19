@@ -1,7 +1,7 @@
 ﻿async function getData() {
     const response = await fetch('/api/home');
     const data = await response.json();
-    console.log(data);
+
 
     var tbody = document.querySelector('#data-table tbody');
 
