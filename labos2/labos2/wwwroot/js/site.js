@@ -1,6 +1,9 @@
-﻿async function getData() {
-    const response = await fetch('/api/home');
+﻿window.onload = authenticated();
+
+async function getData() {
+    const response = await fetch('/api/igraci');
     const data = await response.json();
+    console.log(data);
 
 
     var tbody = document.querySelector('#data-table tbody');
@@ -17,6 +20,118 @@
 };
 
 window.onload = getData;
+
+document.getElementById('loginButton').addEventListener('click', login);
+function login() {
+
+    window.location.href = "/api/igraci/login";
+     authenticated();
+}
+
+document.getElementById('logoutButton').addEventListener('click', logout);
+function logout() {
+    window.location.href = "/api/igraci/logout";
+    authenticated();
+}
+
+document.getElementById('profileButton').addEventListener('click', profile);
+
+document.getElementById('osvjeziButton').addEventListener('click', exportData);
+
+async function exportData() {
+    const response = await fetch('/api/igraci/extract');
+    const data = await response.json();
+
+    if (!data || data.length === 0) {
+        console.error('No igraci data available for export');
+        return;
+    }
+
+    const igraciCsvContent = data.map(row => Object.values(row).join(',')).join('\n');
+
+    const igraciCsvBlob = new Blob([igraciCsvContent], { type: 'text/csv' });
+    const igraciCsvUrl = URL.createObjectURL(igraciCsvBlob);
+    const igraciCsvLink = document.createElement('a');
+    igraciCsvLink.href = igraciCsvUrl;
+    igraciCsvLink.download = 'igraci.csv';
+    document.body.appendChild(igraciCsvLink);
+    igraciCsvLink.click();
+    document.body.removeChild(igraciCsvLink);
+
+    const igraciJsonContent = JSON.stringify(data, null, 2);
+    const igraciJsonBlob = new Blob([igraciJsonContent], { type: 'application/json' });
+    const igraciJsonUrl = URL.createObjectURL(igraciJsonBlob);
+    const igraciJsonLink = document.createElement('a');
+    igraciJsonLink.href = igraciJsonUrl;
+    igraciJsonLink.download = 'igraci.json';
+    document.body.appendChild(igraciJsonLink);
+    igraciJsonLink.click();
+    document.body.removeChild(igraciJsonLink);
+
+    const kluboviResponse = await fetch('/api/klubovi/extract');
+    const kluboviData = await kluboviResponse.json();
+
+    if (!kluboviData || kluboviData.length === 0) {
+        console.error('No klubovi data available for export');
+        return;
+    }
+
+    const csvContent = kluboviData.map(row => Object.values(row).join(',')).join('\n');
+
+    const csvBlob = new Blob([csvContent], { type: 'text/csv' });
+    const csvUrl = URL.createObjectURL(csvBlob);
+    const csvLink = document.createElement('a');
+    csvLink.href = csvUrl;
+    csvLink.download = 'klubovi.csv';
+    document.body.appendChild(csvLink);
+    csvLink.click();
+    document.body.removeChild(csvLink);
+
+    const jsonContent = JSON.stringify(kluboviData, null, 2);
+    const jsonBlob = new Blob([jsonContent], { type: 'application/json' });
+    const jsonUrl = URL.createObjectURL(jsonBlob);
+    const jsonLink = document.createElement('a');
+    jsonLink.href = jsonUrl;
+    jsonLink.download = 'klubovi.json';
+    document.body.appendChild(jsonLink);
+    jsonLink.click();
+    document.body.removeChild(jsonLink);
+
+
+
+}
+
+function profile() {
+    window.location.href = "/api/igraci/profile";
+}
+
+function authenticated() {
+
+    fetch("/api/igraci/authenticated", {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data === false) {
+                document.getElementById('logoutButton').style.display = 'none';
+                document.getElementById('profileButton').style.display = 'none';
+                document.getElementById('osvjeziButton').style.display = 'none';
+            }
+            else {
+                document.getElementById('logoutButton').style.display = 'block';
+                document.getElementById('profileButton').style.display = 'block';
+                document.getElementById('osvjeziButton').style.display = 'block';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching authenticated:', error);
+        });
+}
+
+
 
 const downloadButton = document.getElementById('csv');
 downloadButton.addEventListener('click', function () {

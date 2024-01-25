@@ -7,7 +7,12 @@
     <title>HT Premijer liga</title>
 </head>
 <body>
-
+    <div class="button-container">
+        <button id="loginButton" class="green-button">Login</button>
+        <button id="profileButton" style="display:none;" class="blue-button">Profile</button>
+        <button id="osvjeziButton" style="display:none;" class="red-button">Osvježi preslike</button>
+        <button id="logoutButton" style="display:none;" class="gray-button">Logout</button>
+    </div>
     <div class="container">
         <div class="c">
 
@@ -48,7 +53,7 @@
                     </tr>
                     <tr>
                         <td>Trenutna verzija</td>
-                        <td>3.0</td>
+                        <td>4.0</td>
                     </tr>
                     <tr>
                         <td>Atributi</td>
@@ -63,17 +68,14 @@
                     <img onclick="changeRoute()" src="css/db.png" />
                 </div>
                 <hr />
-                <div class="linkcont">
-                    <div>PREUZMI</div>
-                    <a href="css/klubovi.json" download="klubovi.json" class="link1">JSON</a>
-                    <a href="css/klubovi.csv"  download="klubovi.csv" class="link2">CSV</a>
-                </div>
 
             </div>
 
         </div>
     </div>
-    <<script src="js/site.js"></script>
+    <script src="js/site.js">
+
+    </script>
 
 </body>
 </html>

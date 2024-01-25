@@ -18,6 +18,17 @@ namespace labos2.Models
             };
         }
 
+        public static IActionResult OkResponseKl(List<Klubovi> data)
+        {
+            var apiResponse = data;
+
+            return new ObjectResult(apiResponse)
+            {
+                StatusCode = StatusCodes.Status200OK
+            };
+        }
+
+
         public static IActionResult NotFoundResponse(string message)
         {
             var apiResponse = new Wrapper
